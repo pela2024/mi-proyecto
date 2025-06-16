@@ -31,12 +31,12 @@ const oficina = {
   },
   buscarEnLista(){
     //busca un consorcio en la lista, si no lo encuentra le dice que no esta y si lo encuentra le dice su posición en la lista
-    const nombreConsultar = prompt("Ingrese el nombre del consorcio").toUpperCase()
-    const consulta = oficina.consorcios.indexOf(nombreConsultar)
-    if(consulta === -1){
-      alert(`El consorcio ${nombreConsultar} no esta en la lista`)
+    const consorcioConsultar = prompt("Ingrese el nombre del consorcio").toUpperCase()
+    const consulta = oficina.consorcios.indexOf(consorcioConsultar)
+    if(consulta){
+      alert(`El consorcio ${consorcioConsultar} no esta en la lista`)
     } else {
-      alert(`El consorcio ${nombreConsultar} esta en la posición ${consulta+1}`)
+      alert(`El consorcio ${consorcioConsultar} esta en la posición ${consulta}`)
     }
   }
 }
